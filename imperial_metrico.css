@@ -1,0 +1,15 @@
+body {
+  font-family: 'Comic Sans MS';
+}
+
+#medidas, #input, #convertir {
+  font-family: 'Comic Sans MS';
+}
+
+#resultado {
+  color: rgb(247, 41, 41);
+}
+
+#instrucciones {
+  font-size: small;
+}

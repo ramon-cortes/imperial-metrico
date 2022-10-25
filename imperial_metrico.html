@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./imperial_metrico.css">
+  <title>Mi Conversor</title>
+</head>
+<body>
+  <h3>Mi conversor Imperial-Métrico</h3>
+  <input type="text" size="5px" id="input">
+  <select id="medidas" name="medidas">
+    <option value="Fahrenheit">Fahrenheit</option>
+    <option value="Centigrados">Centigrados</option>
+    <option value="Pies">Pies</option>
+    <option value="Centimetros">Centimetros</option>
+    <option value="Pulgadas">Pulgadas</option>    
+    <option value="Millas">Millas</option>
+    <option value="Kilometros">Kilometros</option>
+    <option value="Nudos">Nudos</option>
+    <option value="Km/h">Km/h => Nudos</option>
+    <option value="Libras">Libras (pounds)</option>
+    <option value="Kilogramos">Kilogramos</option>
+    <option value="Sqft">Pies Cuadrados</option>
+    <option value="M2">Metros Cuadrados</option>
+    <option value="KW">Kilowatt</option>
+    <option value="HP">HP</option>
+    <option value="Oz">Onzas</option>
+    <option value="Ml">MiliLitros</option>
+    <option value="Gr">Gramos</option>
+  </select>
+  <input type="button" id="convertir" onclick="convertir()" value="Convertir">
+  <div id="resultado">&nbsp<br>&nbsp</div>
+  <div id="instrucciones">
+    <h5>INSTRUCCIONES</h5>
+    Al usar pies se puede agregar pulgadas (11 máximo) y 
+    <br>
+    cuartos de pulgada (1/4 2/4 1/2 3/4).
+    <br>
+    [xx xx x/x]
+    <br>
+    Ej: 5 5 3/4
+    <br>
+    Valores erroneos o incompletos serán ignorados.
+  </div>
+  <script type="text/javascript" src="./imperial_metrico.js"></script>
+</body>
+</html>
