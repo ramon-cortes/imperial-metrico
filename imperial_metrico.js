@@ -105,6 +105,12 @@ let conversor = {
   },
   oz: function(x) {
     return x / 28.34952;
+  },
+  gal: function(x) {
+    return x / 3.7854;
+  },
+  l: function(x) {
+    return x * 3.7854;
   }
 }
 
@@ -169,6 +175,12 @@ function convertir() {
       break;
     case 'Gr':
       salida.innerHTML = conversor.oz(dato) + ' Onzas';
+      break;
+    case 'Gal':
+      salida.innerHTML = conversor.l(dato) + ' Litros';
+      break;
+    case 'L':
+      salida.innerHTML = conversor.gal(dato) + ' Galón (US)';
       break;
   }
 }
